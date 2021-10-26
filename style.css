@@ -98,6 +98,17 @@ body {
     transition: background-color 100ms, box-shadow 100ms;
 }
 
+.button:focus,
+.button:hover {
+  background-color: #33C0C4;
+  box-shadow: 0 4px 32px rgba(50, 192, 196, 0.6);
+}
+
+.button:active {
+  background-color: #24888b;
+  box-shadow: none;
+}
+
 .page-footer {
     height: 5%;
     padding: 40px 0;
