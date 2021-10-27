@@ -67,6 +67,8 @@ body {
 }
 
 .left-window {
+    display: block;
+    float: left;
     width: 30%;
     height: 100vh;
     overflow-y: scroll;
@@ -107,6 +109,44 @@ body {
 .button:active {
   background-color: #24888b;
   box-shadow: none;
+}
+
+.right-window {
+    width: 69%;
+    height: 100vh;
+    overflow-y: auto;
+    max-height: inherit;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-raboty {
+    display: block;
+    margin: 4% 0 0 6%;
+    width: 30vw;
+    height: 900px;
+    max-height: 80vh;
+    background-color: #33C0C4;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: url(img/faketext.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.empty {
+    display: inline-block;
+    max-height: 80vh;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 40vh;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 .page-footer {
