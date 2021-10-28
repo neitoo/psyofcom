@@ -117,12 +117,12 @@ body {
     overflow-y: auto;
     max-height: inherit;
     box-sizing: border-box;
-    display: flex;
     flex-direction: column;
 }
 
 .name-raboty {
     display: block;
+    float: left;
     margin: 4% 0 0 6%;
     width: 30vw;
     height: 900px;
@@ -132,15 +132,49 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-    background-image: url(img/faketext.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
+#name-down {
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#download {
+    position: relative;
+    margin: 0 auto;
+    padding: 8px 24px;
+    display: block;
+    -webkit-filter: drop-shadow( 0px 10px 16px rgba(0, 0, 0, 0.4) );
+    filter: drop-shadow( 0px 10px 16px rgba(0, 0, 0, 0.4) );
+}
+
+#download:focus,
+#download:hover {
+    -webkit-filter: drop-shadow( 0px 10px 16px rgba(72, 236, 241, 0.6));
+    filter: drop-shadow( 0px 10px 16px rgba(72, 236, 241, 0.6));
+}
+
+#download:active {
+    filter: grayscale(40%);
+}
+
+.rabota{
+    position: relative;
+    display: block;
+    float: left;
+    margin: 2% 0 0 8% ;
+    -webkit-filter: drop-shadow( 0px 10px 16px rgba(0, 0, 0, 0.4) );
+    filter: drop-shadow( 0px 10px 16px rgba(0, 0, 0, 0.4) );
+}
+
+#photos {
+    
+}
+
 .empty {
-    display: inline-block;
+    display: block;
     max-height: 80vh;
     border-radius: 20px;
     text-align: center;
