@@ -74,7 +74,7 @@ body {
     display: block;
     float: left;
     width: 30%;
-    height: 115vh;
+    height: 80%;
     overflow-y: scroll;
 }
 
@@ -199,8 +199,32 @@ body {
 }
 
 .page-footer {
-    height: 5%;
-    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1% 0;
     margin-top: 10px;
     background-color: #7157DB;
+}
+
+.by{
+    cursor: default;
+    display: flex;
+    justify-content:flex-start;
+    padding-right: 82%;
+}
+
+.connect{
+    margin: 1em 30px 0 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+.connect:hover{
+    -webkit-filter: drop-shadow( 0px 0px 7px rgba(79, 239, 245, 1) );
+    filter: drop-shadow( 0px 0px 7px rgba(79, 239, 245, 1) );
+}
+
+.connect:active{
+    -webkit-filter: drop-shadow( 0px 0px 7px rgb(255, 255, 255) );
+    filter: drop-shadow( 0px 0px 7px rgb(255, 255, 255) );
 }
